@@ -20,8 +20,10 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import com.rafaelb.minhasfinancas.model.enums.StatusLancamento;
 import com.rafaelb.minhasfinancas.model.enums.TipoLancamento;
 
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -30,6 +32,8 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "lancamento", schema = "financas")
 public class Lancamento {
 
